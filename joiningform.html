@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+         Joining form
+      </title>
+      <link rel="stylesheet" href="jform.css">
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="./reg.js" type="text/javascript"></script>
+   </head>
+   <body>
+      <div>
+         <div class="container">
+            <div class="shadow-s mb-1 border">
+               <h3 class="text-center p-4 bg-light border">Employee Joining Form</h3>
+               <form id="joiningForm">
+                  <div class="border rounded shadow-sm m-4">
+                     <div class="text-center p-3 bg-light text-dark bg-opacity-25 border-bottom">
+                        <h5>Personal Information</h5>
+                     </div>
+                     <div class="m-3">
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputname" class="col-form-label-sm" required>First Name</label>
+                              <input type="text" class="form-control form-control-sm" id="pi_fname">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputname" class="col-form-label-sm">Middle Name</label>
+                              <input type="text" class="form-control form-control-sm" id="pi_mname">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputname3" class="col-form-label-sm">Last Name</label>
+                              <input type="text" class="form-control form-control-sm" id="pi_lname">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="input" class="col-form-label-sm">Gender</label>
+                              <select class="form-select form-select-sm" aria-label="Gender" id="pi_gender">
+                                 <option selected disabled>Select</option>
+                                 <option id="1" value="Male">Male</option>
+                                 <option id="2" value="Female">Female</option>
+                                 <option id="3" value="Other">Other</option>
+                              </select>
+                           </div>
+                           <div class="col-4">
+                              <label for="input" class="col-form-label-sm">Date of Birth</label>                  
+                              <input class="form-control form-control-sm" type="date" id="pi_birthdate" name="birthdate">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Contact Number</label>
+                              <input type="text" class="form-control form-control-sm" id="pi_contactno">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Nationality</label>                  
+                              <input type="text" class="form-control form-control-sm" id="pi_nationality">
+                           </div>
+                           <div class="col-4">
+                              <label for="input" class="col-form-label-sm">Marital Status</label>                  
+                              <select class="form-select form-select-sm" aria-label="maritalstatus" id="pi_mstatus">
+                                 <option selected disabled>Select</option>
+                                 <option id="1" value="Un">Unmarried</option>
+                                 <option id="2" value="Mr">Married</option>
+                              </select>
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Email Address</label>
+                              <input type="email" class="form-control form-control-sm" id="pi_email" aria-describedby="emailHelp" aria-errormessage="error">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-6">
+                              <label for="inputname" class="col-form-label-sm">Permanent Address</label>
+                              <textarea class="form-control form-control-sm" rows="3" id="pi_paddress"></textarea>
+                           </div>
+                           <div class="col-6">
+                              <label for="inputname" class="col-form-label-sm">Current Address</label>
+                              <textarea class="form-control form-control-sm" rows="3" id="pi_caddress"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="border rounded shadow-sm m-4">
+                     <div class="text-center p-3 bg-light border">
+                        <h5>Emergency Contact Information</h5>
+                     </div>
+                     <div class="m-3">
+                        <div class="row mb-3">
+                           <div class="col">
+                              <label for="inputname" class="col-form-label-sm" required>Full Name</label>
+                              <input type="text" class="form-control form-control-sm" id="ec_fullname">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Contact Number</label>
+                              <input type="text" class="form-control form-control-sm" id="ec_contactno">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Email Address</label>
+                              <input type="email" class="form-control form-control-sm" id="ec_email" aria-describedby="emailHelp">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Relationship</label>
+                              <input type="text" class="form-control form-control-sm" id="ec_relationship">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-12">
+                              <label for="inputname" class="col-form-label-sm">Address</label>
+                              <textarea class="form-control form-control-sm" rows="3" id="ec_address"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="border rounded shadow-sm m-4">
+                     <div class="text-center p-3 bg-light border">
+                        <h5>Education Information</h5>
+                     </div>
+                     <div class="m-3">
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="input" class="col-form-label-sm">Education</label>
+                              <select class="form-select form-select-sm" aria-label="education" id="ed_dropdown">
+                                 <option selected disabled>Select</option>
+                                 <option id="edu_ssc" value="ssc">SSC</option>
+                                 <option id="edu_hsc" value="hsc">HSC</option>
+                                 <option id="edu_diploma" value="dip">Diploma</option>
+                                 <option id="edu_degree" value="deg">Degree</option>
+                                 <option id="edu_pg" value="pg">PG</option>
+                              </select>
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">University</label>
+                              <input type="text" class="form-control form-control-sm" id="ed_university">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Year of Completion</label>
+                              <input type="text" class="form-control form-control-sm" id="ed_yoc">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">School/College Name</label>
+                              <input type="text" class="form-control form-control-sm" id="ed_schclg">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Percentage/CGP</label>
+                              <input type="text" class="form-control form-control-sm" id="ed_percgp">
+                           </div>
+                           <div class="col-4 p-4">
+                              <!-- <label for="inputnationality" class="col-form-label-sm">Percentage/CGP</label> -->
+                              <button type="button" class="btn btn-primary btn-sm" onclick="addEducation()">Add</button>
+                           </div>
+                        </div>
+                        <div class="row mb-3 p-3 d-none" id ="edudetailtable">
+                           <table class="table table-bordered table-sm" id="edu_table">
+                              <thead>
+                                <tr>
+                                  
+                                  <th scope="col">Education</th>
+                                  <th scope="col">University</th>
+                                  <th scope="col">Year of Completion</th>
+                                  <th scope="col">School/College Name</th>
+                                  <th scope="col">Percentage/CGP</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                
+                              </tbody>
+                            </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="border rounded shadow-sm m-4">
+                     <div class="text-center p-3 bg-light border">
+                        <h5>Previous Employment Information</h5>
+                     </div>
+                     <div >
+                     <div class="m-3" id="prevEmpInfo">
+                        <div class="row mb-3">
+                           <div class="col-3">
+                              <label for="inputnationality" class="col-form-label-sm">Company</label>
+                              <input type="text" class="form-control form-control-sm" id="pe_company">
+                           </div>
+                           <div class="col-3">
+                              <label for="inputnationality" class="col-form-label-sm">Position Held</label>
+                              <input type="text" class="form-control form-control-sm" id="pe_position">
+                           </div>
+                           <div class="col-lg-6">
+                              <label for="inputnationality" class="col-form-label-sm">Period of Employment</label>
+                              <div class="row">
+                                 <div class="col-2">
+                                    <label for="inputnationality" class="col-form-label-sm">From</label>
+                                 </div>
+                                 <div class="col-4">
+                                    <input class="form-control form-control-sm text-start" type="date" id="pe_fromdate" name="fromdate">
+                                 </div>
+                                 <div class="col-2 text-center">
+                                    <label class="col-form-label-sm">To</label>
+                                 </div>
+                                 <div class="col-4">
+                                    <input class="form-control form-control-sm" type="date" id="pe_todate" name="todate">
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col">
+                              <label for="inputnationality" class="col-form-label-sm">Reason for Leaving</label>
+                              <input type="text" class="form-control form-control-sm" id="pe_reson">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                     <div class="text-center m-3">
+                        <button type="button" class="btn btn-primary btn-sm" onclick="addPreviousEmp()">Add another</button>
+                     </div>
+                  </div>
+                  <div class="border rounded shadow-sm m-4">
+                     <div class="text-center p-3 bg-light border">
+                        <h5>Banking Information</h5>
+                     </div>
+                     <div class="m-3">
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Account Holder's Name</label>
+                              <input type="text" class="form-control form-control-sm" id="b_acnthlderdnm">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Bank Name</label>
+                              <input type="text" class="form-control form-control-sm" id="b_banknm">
+                           </div>
+                           <div class="col-4">
+                              <label for="input" class="col-form-label-sm">Account Number</label>
+                              <input type="text" class="form-control form-control-sm" id="b_accountno">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Bank Branch</label>
+                              <input type="text" class="form-control form-control-sm" id="b_branch">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">IFSC</label>
+                              <input type="text" class="form-control form-control-sm" id="b_ifsc">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="border rounded shadow-sm m-4">
+                     <div class="text-center p-3 bg-light border">
+                        <h5>References</h5>
+                     </div>
+                     <div class="m-3">
+                        <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Name</label>
+                              <input type="text" class="form-control form-control-sm" id="ref_name">
+                           </div>
+                           <div class="col-4">
+                              <label for="input" class="col-form-label-sm">Relationship</label>
+                              <input type="text" class="form-control form-control-sm" id="ref_rel">
+                           </div>
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label-sm">Contact Number</label>
+                              <input type="text" class="form-control form-control-sm" id="ref_contactno">
+                           </div>
+                        </div>
+                        <div class="row mb-3">
+                           <div class="col-sm-4">
+                              <label for="inputnationality" class="col-form-label-sm">Email</label>
+                              <input type="email" class="form-control form-control-sm" id="ref_email" aria-describedby="emailHelp" aria-errormessage="error">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="border rounded shadow-sm m-4">
+                     <div class="text-center p-3 bg-light border">
+                        <h5>Declaration</h5>
+                     </div>
+                     <div class="m-3">
+                        <div class="row">
+                           <div class="col">
+                              <div class="form-check mb-2">
+                                 <input class="form-check-input" type="checkbox" id="conifrm_chbx">
+                                 <label class="form-check-label" for="check1">
+                                 I hereby confirm that all the above information is accurate to the best of my knowledge.
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- <div class="row mb-3">
+                           <div class="col-4">
+                              <label for="inputnationality" class="col-form-label">Signature</label>                    
+                              <input type="text" class="form-control" id="signature">
+                           </div>
+                           <div class="col-1">&nbsp</div>
+                           <div class="col-4">
+                              <label for="input" class="col-form-label">Date</label>                    
+                              <input type="date" class="form-control" id="decl_date">
+                           </div>
+                           </div> -->
+                     </div>
+                  </div>
+                  <div class="m-4 text-center">
+                     <button type="button" class="btn btn-primary btn-sm" onclick="submitformdata()">Submit</button>
+                     <button type="button" class="btn btn-primary btn-sm" onclick="clearform()">Clear</button>
+                  </div>
+                  <!-- <button type="submit" class="text-center btn btn-lg btn-primary">Submit</button> -->
+                  <!-- <div class="text-center"><button type="submit" class="text-center btn btn-primary">Save</button></div> -->
+               </form>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
